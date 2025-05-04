@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  resource :echo, only: :create
+  resource :echo, only: :create, defaults: { format: :json }
 end
